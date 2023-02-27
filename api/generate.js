@@ -33,6 +33,26 @@ export default async function (req, res) {
         });
         res.status(200).json({ result: completion.data.choices[0].text});
     } catch(error) {
-        
+      if (error.response) {
+        console.error(error.response.status).json(error.response.data);
+      } else {
+        console.error(`Error with OpenAI API request: ${error.message}`);
+        res.status(500).json({
+            error: {
+                message: 'An error occurred during your request.',
+            }
+        });
+      }
     }
+}
+
+function generatePrompt(animal) {
+    const capitalizedAnimal = animal[0].toUpperCase() + animal.slice(1).toLowerCase();
+
+    return `Choose 2 random animals and combine them with ${capitalizedAnimal} to make a single animal with characteristics from all three. The animals can be natural, insects, realistic, synthetic, mythological, fantasy or science fiction.
+  
+    Choose a background or environment that would suit the new animal.
+    The response should be in the form of a drawing prompt and should begin with "Draw a...".
+  
+  `;
 }
