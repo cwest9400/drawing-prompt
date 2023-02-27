@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
-import styles from "./index.module.css";
+import styles from "../styles/prompt.module.css";
 
 export default function AnimalPrompt() {
     const [animalInput, setAnimalInput] = useState("");
@@ -9,7 +9,7 @@ export default function AnimalPrompt() {
     async function onSubmit(event) {
         event.preventDefault();
         try {
-            const response = await fetch("/api/generate", {
+            const response = await fetch("./api/generateAnimal", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

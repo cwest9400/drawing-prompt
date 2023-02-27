@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import AnimalPrompt from '../components/animal-prompt';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -20,8 +21,10 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a href="" className={styles.card}>
-            <h3>Draw an Animal! &darr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <AnimalPrompt />
+
+            {/* <h3>Draw an Animal! &darr;</h3> */}
+            {/* <p>Find in-depth information about Next.js features and API.</p> */}
           </a>
 
          
