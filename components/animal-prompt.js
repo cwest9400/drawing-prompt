@@ -9,9 +9,10 @@ export default function AnimalPrompt() {
     async function onSubmit(event) {
         event.preventDefault();
         try {
-            const response = await fetch("./api/generateAnimal", {
+            const response = await fetch("/api/generate", {
                 method: "POST",
                 headers: {
+                    
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({ animal: animalInput }),
@@ -24,16 +25,17 @@ export default function AnimalPrompt() {
 
             setResult(data.result);
             setAnimalInput("");
-        } catch {
+        } catch(error) {
             console.error(error);
             alert(error.message);
         }
     }
+    
     return (
         <div>
             <Head>
         <title>drawingPrompt</title>
-        <link rel="icon" href="/dog.png" />
+        
       </Head>
 
       <main className={styles.main}>
