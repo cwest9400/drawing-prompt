@@ -35,7 +35,7 @@ export default function AnimalPrompt() {
         <div>
        
       <main className={styles.main}>
-        <img src="/dog.png" className={styles.icon} />
+        <img src="" className={styles.icon} />
         <h3>Draw an animal!</h3>
         <form onSubmit={onSubmit}>
           <input
