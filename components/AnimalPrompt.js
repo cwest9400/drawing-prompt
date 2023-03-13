@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
 import styles from "../styles/prompt.module.css";
+import Loader from "./Loader";
 
 export default function AnimalPrompt() {
     const [animalInput, setAnimalInput] = useState("");
@@ -50,7 +51,7 @@ export default function AnimalPrompt() {
             />
           <input type="submit" value="Generate drawing prompt" />
         </form>
-        {isLoading ? (<p>Loading...</p>) : (
+        {isLoading ? (<p><Loader /></p> || <p>Loading...</p>) : (
         <div className={styles.result}>{result}</div>
         )}
       </main>
