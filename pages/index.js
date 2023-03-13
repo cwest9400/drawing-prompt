@@ -1,46 +1,46 @@
 import Head from 'next/head';
-// import AnimalPrompt from '../components/animal-prompt';
+import AnimalPrompt from '../components/AnimalPrompt';
 import styles from '../styles/Home.module.css';
 import { useState } from "react";
 // import styles from "../styles/prompt.module.css";
 
 export default function Home() {
   const [animalInput, setAnimalInput] = useState("");
-    const [result, setResult] = useState();
+  const [result, setResult] = useState();
 
-    async function onSubmit(event) {
-        event.preventDefault();
-        try {
-            const response = await fetch("/api/generate", {
-                method: "POST",
-                headers: {
-                    
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ animal: animalInput }),
-            });
+  async function onSubmit(event) {
+    event.preventDefault();
+    try {
+      const response = await fetch("/api/generate", {
+        method: "POST",
+        headers: {
 
-            const data = await response.json();
-            if (response.status !== 200) {
-                throw data.error || new Error(`Request failed with status ${response.status}`);
-            }
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ animal: animalInput }),
+      });
 
-            setResult(data.result);
-            setAnimalInput("");
-        } catch(error) {
-            console.error(error);
-            alert(error.message);
-        }
+      const data = await response.json();
+      if (response.status !== 200) {
+        throw data.error || new Error(`Request failed with status ${response.status}`);
+      }
+
+      setResult(data.result);
+      setAnimalInput("");
+    } catch (error) {
+      console.error(error);
+      alert(error.message);
     }
+  }
   return (
     <div>
-            <Head>
+      <Head>
         <title>drawingPrompt</title>
-        
+
       </Head>
 
       <main className={styles.main}>
-        <img src="/dog.png" className={styles.icon} />
+        <img src="" className={styles.icon} />
         <h3>Draw an animal!</h3>
         <form onSubmit={onSubmit}>
           <input
@@ -54,38 +54,41 @@ export default function Home() {
         </form>
         <div className={styles.result}>{result}</div>
       </main>
-        </div>
-    )
-    // <div className={styles.container}>
-    //   <Head>
-    //     <title>Drawing Prompts</title>
-    //     <link rel="icon" href="/favicon.ico" />
-    //   </Head>
+      <div>
+        <AnimalPrompt />
+      </div>
+    </div>
+  )
+  // <div className={styles.container}>
+  //   <Head>
+  //     <title>Drawing Prompts</title>
+  //     <link rel="icon" href="/favicon.ico" />
+  //   </Head>
 
-    //   <main>
-    //     <h1 className={styles.title}>
-    //       Welcome to <a href="">Drawing Prompts!</a>
-    //     </h1>
+  //   <main>
+  //     <h1 className={styles.title}>
+  //       Welcome to <a href="">Drawing Prompts!</a>
+  //     </h1>
 
-    //     <p className={styles.description}>
-    //       Get started by choosing a prompt!
-    //     </p>
+  //     <p className={styles.description}>
+  //       Get started by choosing a prompt!
+  //     </p>
 
-    //     <div className={styles.grid}>
-    //       <div className={styles.card}>
-            {/* <AnimalPrompt /> */}
+  //     <div className={styles.grid}>
+  //       <div className={styles.card}>
+  {/* <AnimalPrompt /> */ }
 
 
-            {/* <h3>Draw an Animal! &darr;</h3> */}
-            {/* <p>Find in-depth information about Next.js features and API.</p> */}
+  {/* <h3>Draw an Animal! &darr;</h3> */ }
+  {/* <p>Find in-depth information about Next.js features and API.</p> */ }
   //         </div>
 
-         
 
-          
 
-          
-          
+
+
+
+
   //       </div>
   //     </main>
 

@@ -1,5 +1,5 @@
-import Head from "next/head";
-import { useState } from "react";
+
+import React, { useState } from "react";
 import styles from "../styles/prompt.module.css";
 
 export default function AnimalPrompt() {
@@ -33,11 +33,7 @@ export default function AnimalPrompt() {
     
     return (
         <div>
-            <Head>
-        <title>drawingPrompt</title>
-        
-      </Head>
-
+       
       <main className={styles.main}>
         <img src="/dog.png" className={styles.icon} />
         <h3>Draw an animal!</h3>

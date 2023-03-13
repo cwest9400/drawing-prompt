@@ -50,7 +50,7 @@ export default async function (req, res) {
 function generatePrompt(animal) {
     const capitalizedAnimal = animal[0].toUpperCase() + animal.slice(1).toLowerCase();
 
-    return `Choose 2 random animals and combine them with ${capitalizedAnimal} to make a single animal with characteristics from all three. The animals can be natural, insects, realistic, synthetic, mythological, fantasy or science fiction.
+    return `Choose 2 random animals and combine them with ${capitalizedAnimal} to make a single animal with characteristics from all three. The animals can be natural, insects, realistic, synthetic, mythological, fantasy or science fiction. try not to use griffin or dragon very often.
   
     Choose a background or environment that would suit the new animal. Include an atmospheric mood too.
     The response should be in the form of a drawing prompt and should begin with "Draw a...".
