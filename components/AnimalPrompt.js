@@ -34,10 +34,9 @@ export default function AnimalPrompt() {
         }
     }
     
-    if (isLoading) return <p>Loading...</p>
+    
     return (
       <div>
-       
       <main className={styles.main}>
         <img src="" className={styles.icon} />
         <h3>Draw an animal!</h3>
@@ -51,8 +50,11 @@ export default function AnimalPrompt() {
             />
           <input type="submit" value="Generate drawing prompt" />
         </form>
+        {isLoading ? (<p>Loading...</p>) : (
         <div className={styles.result}>{result}</div>
+        )}
       </main>
         </div>
+        
     )
 }
