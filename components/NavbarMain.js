@@ -2,6 +2,7 @@ import styles from '../styles/NavbarMain.module.css';
 
 import Link from "next/link"
 
+import { Link as ScrollLink } from 'react-scroll';
 export default function NavbarMain() {
 
     return (
@@ -15,6 +16,9 @@ export default function NavbarMain() {
                 </li>
                 <li>
                     <Link href="">Sign In</Link>
+                </li>
+                <li>
+                    <Link href="">test animation</Link>
                 </li>
             </ul>
         </nav>
