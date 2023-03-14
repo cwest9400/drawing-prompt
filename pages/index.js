@@ -20,8 +20,7 @@ export default function Home() {
 <main>
       <h1>Daily Doodley Draw</h1>
         <div>
-          <RandomImage />
-          <AnimalPrompt />
+          
         </div>
         
       </main>
