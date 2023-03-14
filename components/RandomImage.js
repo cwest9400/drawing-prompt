@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react"
+import Loader from "./Loader"
+import styles from '../styles/Home.module.css';
 
 function RandomImage() {
     const [data, setData] = useState(null)
@@ -15,14 +17,14 @@ function RandomImage() {
         fetchImage()
     }, [])
 
-    if (isLoading) return <p>Loading...</p>
+    if (isLoading) return <Loader />
     if (!data) return <p>error fetching img</p>
     const image = data.urls.regular
     const imgAlt = data.alt_description
     const photographer = data.user.name
 
     return (
-        <div>
+        <div className={styles.container}>
             <img src={image} alt={imgAlt} />
             <div>
             by: {photographer}
