@@ -24,7 +24,10 @@ function RandomImage() {
     return (
         <div>
             <img src={image} alt={imgAlt} />
+            <div>
             by: {photographer}
+            </div>
+            
         </div>
     )
 
