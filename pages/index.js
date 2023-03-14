@@ -2,6 +2,7 @@ import Head from 'next/head';
 import AnimalPrompt from '../components/AnimalPrompt';
 import styles from '../styles/Home.module.css';
 import { useState } from "react";
+import RandomImage from '../components/RandomImage';
 // import styles from "../styles/prompt.module.css";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
 <main>
       
         <div>
+          <RandomImage />
           <AnimalPrompt />
         </div>
         

@@ -1,3 +1,5 @@
+//pencil loader html & css credit: 
+
 import styles from "../styles/loader.module.css";
 
 export default function Loader() {
