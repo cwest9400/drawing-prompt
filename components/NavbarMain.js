@@ -3,13 +3,20 @@ import styles from '../styles/NavbarMain.module.css';
 import Link from "next/link"
 
 export default function NavbarMain() {
-  
+
     return (
-        <div className={styles.navbar}>
-            
-            <Link href="/promptsPage">Word Prompt</Link>
-            <Link href="/imagesPage">Image Promt</Link>
-            <Link href="">Sign In</Link>
-        </div>
+        <nav className={styles.navbar}>
+            <ul>
+                <li>
+                    <Link href="/promptsPage">Word Prompt</Link>
+                </li>
+                <li>
+                    <Link href="/imagesPage">Image Promt</Link>
+                </li>
+                <li>
+                    <Link href="">Sign In</Link>
+                </li>
+            </ul>
+        </nav>
     )
 }
