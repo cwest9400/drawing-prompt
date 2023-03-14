@@ -11,14 +11,14 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>drawingPrompt</title>
+        <title>Daily Doodley Draw</title>
 
       </Head>
       <nav> 
         <NavbarMain />
       </nav>
 <main>
-      
+      <h1>Daily Doodley Draw</h1>
         <div>
           <RandomImage />
           <AnimalPrompt />

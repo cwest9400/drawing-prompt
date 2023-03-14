@@ -1,4 +1,5 @@
 import Link from "next/link"
+import AnimalPrompt from "../components/AnimalPrompt"
 
 export default function promptsPage() {
   
@@ -6,6 +7,7 @@ export default function promptsPage() {
         <div>
             <h1>Prompts page</h1>
             <Link href="/">back to home</Link>
+            <AnimalPrompt />
         </div>
     )
 }
