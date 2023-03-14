@@ -3,6 +3,7 @@ import AnimalPrompt from '../components/AnimalPrompt';
 import styles from '../styles/Home.module.css';
 import { useState } from "react";
 import RandomImage from '../components/RandomImage';
+import NavbarMain from '../components/NavbarMain';
 // import styles from "../styles/prompt.module.css";
 
 export default function Home() {
@@ -13,6 +14,9 @@ export default function Home() {
         <title>drawingPrompt</title>
 
       </Head>
+      <nav> 
+        <NavbarMain />
+      </nav>
 <main>
       
         <div>
