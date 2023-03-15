@@ -1,0 +1,20 @@
+
+.navbar {
+    background-color: black;
+    display: flex;
+    column-gap: 16px;
+    height: 80px;
+    width: 400px;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: aquamarine;
+}
+.navbar a:hover {
+    font-size: larger;
+}

@@ -1,9 +1,8 @@
 import Head from 'next/head';
-import AnimalPrompt from '../components/AnimalPrompt';
-import styles from '../styles/Home.module.css';
+
 import { useState } from "react";
-import RandomImage from '../components/RandomImage';
-import NavbarMain from '../components/NavbarMain';
+
+import Navbar from '../components/Navbar';
 // import styles from "../styles/prompt.module.css";
 
 export default function Home() {
@@ -15,7 +14,7 @@ export default function Home() {
 
       </Head>
       <nav> 
-        <NavbarMain />
+        <Navbar />
       </nav>
 <main>
       <h1>Daily Doodley Draw</h1>
