@@ -1,5 +1,6 @@
 import Link from "next/link"
 import RandomImage from "../components/RandomImage"
+import Navbar from "../components/Navbar"
 
 export default function imagesPage() {
   
