@@ -5,6 +5,7 @@ export default function imagesPage() {
   
     return (
         <div>
+            <Navbar />
             <h1>images page</h1>
             <Link href="/">back to home</Link>
 <div>
