@@ -16,13 +16,18 @@ export default function Home() {
       <nav> 
         <Navbar />
       </nav>
-<main>
-      <h1>Daily Doodley Draw</h1>
-        <div>
-          
-        </div>
+      <main className={styles.main}>
+      <div className={styles.description}>
+        <h1>
+          Doodley Draw Daily
+        </h1>
+      <p>
+          Doodle for 10 minutes a day to keep the feel bads away.  
+        </p>
         
-      </main>
+      </div>
+
+    </main>
     </div>
   )
   // <div className={styles.container}>
