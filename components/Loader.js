@@ -11,7 +11,7 @@ export default function Loader() {
 			<rect height="30" width="30" ry="5" rx="5"></rect>
 		</clipPath>
 	</defs>
-	<circle transform="rotate(-113,100,100)" strokeLinecap="round" stroke-dashoffset="439.82" stroke-dasharray="439.82 439.82" stroke-width="2" stroke="currentColor" fill="none" r="70" className={styles.pencil__stroke}></circle>
+	<circle transform="rotate(-113,100,100)" strokeLinecap="round" strokeDashoffset="439.82" strokeDasharray="439.82 439.82" strokeWidth="2" stroke="currentColor" fill="none" r="70" className={styles.pencil__stroke}></circle>
 	<g transform="translate(100,100)" className={styles.pencil__rotate}>
 		<g fill="none">
 			<circle transform="rotate(-90)" stroke-dashoffset="402" stroke-dasharray="402.12 402.12" stroke-width="30" stroke="hsl(223,90%,50%)" r="64" className={styles.pencil__body1}></circle>
