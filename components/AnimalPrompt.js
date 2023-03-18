@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import styles from "../styles/prompt.module.css";
+import styles from "../styles/Prompt.module.css";
 import Loader from "./Loader";
 
 export default function AnimalPrompt() {
