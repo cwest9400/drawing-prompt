@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import Loader from "./Loader"
-import styles from '../styles/Home.module.css';
+import styles from '../styles/ImagePrompt.module.css';
 
 function RandomImage() {
     const [data, setData] = useState(null)
@@ -24,7 +24,7 @@ function RandomImage() {
     const photographer = data.user.name
 
     return (
-        <div className={styles.container}>
+        <div className={styles.main}>
             <img src={image} alt={imgAlt} />
             <div>
             by: {photographer}
