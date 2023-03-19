@@ -8,16 +8,23 @@ export default function Navbar() {
 
     return (
         <nav className={styles.main}>
+
             <div className={styles.grid}>
-                <Link href="/promptsPage" className={styles.card}>
+                <div>
                     <h2 className={inter.className}>Text Prompt</h2>
                     <p className={inter.className}>Stir up your imagination. An AI generated prompt to get your brain moving.</p>
-                </Link>
+                </div>
 
-                <Link href="/imagesPage" className={styles.card}>
+                <div>
                     <h2 className={inter.className}>Image Prompt</h2>
                     <p className={inter.className}>Reference images to beef up your visual library.</p>
-                    </Link>
+                </div>
+                <Link href="/promptsPage" className={styles.card}>
+                    <h3 className={inter.className}>Animal </h3>
+                </Link>
+                <Link href="/imagesPage" className={styles.card}>
+                    <h3 className={inter.className}>Random</h3>
+                </Link>
             </div>
 
         </nav>

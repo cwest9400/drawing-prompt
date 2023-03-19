@@ -51,7 +51,7 @@ export default function AnimalPrompt() {
             />
           <input type="submit" value="Generate drawing prompt" />
         </form>
-        {isLoading ? (<p><Loader /></p> || <p>Loading...</p>) : (
+        {isLoading ? (<Loader /> || "Loading...") : (
         <div className={styles.result}>{result}</div>
         )}
       </main>

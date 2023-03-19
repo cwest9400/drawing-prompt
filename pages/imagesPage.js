@@ -10,6 +10,7 @@ export default function imagesPage() {
             
             <Link href="/">back to home</Link>
 <div>
+    <div></div>
     <RandomImage />
 </div>
 

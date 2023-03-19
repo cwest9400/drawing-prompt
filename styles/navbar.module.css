@@ -41,7 +41,7 @@
     grid-template-columns: repeat(2, minmax(50%, auto));
     width: var(--max-width);
     max-width: 100%;
-    background-color: blueviolet;
+    background-color: rgb(43, 43, 43);
     border-radius: 16px;
   }
   
