@@ -31,9 +31,7 @@ export default function Navbar() {
                     <h3 className={inter.className}>Random</h3>
                 </Link>
                 
-                <Link href="" className={styles.card}>
-                    <h3 className={inter.className}>Categories</h3>
-                </Link>
+                
                 
             </div>
 
