@@ -21,6 +21,13 @@ export default function imagesPage() {
                     <Link href="" className={styles.card}>
                     <h3 className={inter.className}>Random</h3>
                 </Link>
+                <Link href="" className={styles.card}>
+                    <h3 className={inter.className}>Search</h3>
+                </Link>
+                
+                <Link href="/imagesPage" className={styles.card}>
+                    <h3 className={inter.className}>Random</h3>
+                </Link>
                 </div>
 
                 {/* <RandomImage /> */}
